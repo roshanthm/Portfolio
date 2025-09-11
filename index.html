@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roshan Thomas | Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    <style>
+        .vanta-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .text-gradient {
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+    </style>
+</head>
+<body class="min-h-screen text-white overflow-x-hidden">
+    <div id="vanta-bg" class="vanta-bg"></div>
+    
+    <nav class="fixed w-full z-50 py-4 px-6 md:px-12 backdrop-blur-md">
+        <div class="flex justify-between items-center max-w-6xl mx-auto">
+            <a href="#" class="text-2xl font-bold text-gradient">Roshan Thomas</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="hover:text-blue-400 transition">Home</a>
+                <a href="#about" class="hover:text-blue-400 transition">About</a>
+                <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
+                <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+            </div>
+            <button class="md:hidden" id="menu-toggle">
+                <i data-feather="menu"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-900/90 mt-4 rounded-lg p-4 backdrop-blur-sm">
+            <div class="flex flex-col space-y-3">
+                <a href="#home" class="hover:text-blue-400 transition">Home</a>
+                <a href="#about" class="hover:text-blue-400 transition">About</a>
+                <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
+                <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-24 pb-16 px-6 md:px-12">
+        <!-- Hero Section -->
+        <section id="home" class="min-h-screen flex items-center">
+            <div class="max-w-6xl mx-auto text-center md:text-left">
+                <div class="glass-card p-8 md:p-12 max-w-3xl" data-aos="fade-up">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm <span class="text-gradient">Roshan Thomas</span></h1>
+                    <h2 class="text-xl md:text-2xl mb-6">Student at Amal Jyothi College of Engineering</h2>
+                    <p class="text-lg mb-8 opacity-90">Passionate about technology, design, and creating innovative solutions that make an impact.</p>
+                    <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                        <a href="#projects" class="px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full font-medium hover:shadow-lg transition">View My Work</a>
+                        <a href="#contact" class="px-6 py-3 border border-white rounded-full font-medium hover:bg-white hover:text-gray-900 transition">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center" data-aos="fade-up">About <span class="text-gradient">Me</span></h2>
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="w-full md:w-1/3" data-aos="fade-right">
+                        <div class="glass-card p-6 rounded-full overflow-hidden flex justify-center items-center">
+                            <img src="https://media.licdn.com/dms/image/v2/D4D03AQGSfP_df49YSw/profile-displayphoto-shrink_400_400/B4DZWnCIRqH4Ag-/0/1742264109239?e=1760572800&v=beta&t=4TJFkwBxyn48WEOHiphcr6WAQTTnDZJjUyiJRXaroaM" alt="Roshan Thomas" class="w-full h-auto rounded-full object-cover border-4 border-white/20" style="aspect-ratio: 1/1;">
+                        </div>
+                    </div>
+                    <div class="w-full md:w-2/3" data-aos="fade-left">
+                        <div class="glass-card p-8 rounded-2xl">
+                            <h3 class="text-2xl font-bold mb-4">Who am I?</h3>
+                            <p class="mb-6 opacity-90">I'm a passionate engineering student specializing in Computer Science at Amal Jyothi College of Engineering. With a keen interest in software development, UI/UX design, and emerging technologies, I'm constantly learning and building projects to expand my skills.</p>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                                <div>
+                                    <h4 class="font-bold mb-2 flex items-center">
+                                        <i data-feather="user" class="mr-2"></i> Details
+                                    </h4>
+                                    <p><span class="font-medium">Name:</span> Roshan Thomas</p>
+                                    <p><span class="font-medium">Education:</span> B.Tech in Computer Science</p>
+                                    <p><span class="font-medium">Institution:</span> Amal Jyothi College of Engineering</p>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-2 flex items-center">
+                                        <i data-feather="award" class="mr-2"></i> Skills
+                                    </h4>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-3 py-1 bg-blue-500/20 rounded-full text-sm">Web Development</span>
+                                        <span class="px-3 py-1 bg-purple-500/20 rounded-full text-sm">UI/UX Design</span>
+                                        <span class="px-3 py-1 bg-green-500/20 rounded-full text-sm">Python</span>
+                                        <span class="px-3 py-1 bg-yellow-500/20 rounded-full text-sm">JavaScript</span>
+                                        <span class="px-3 py-1 bg-red-500/20 rounded-full text-sm">Machine Learning</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-6 flex items-center space-x-4">
+                                <a href="#" class="inline-flex items-center text-blue-400 hover:text-blue-300">
+                                    Download CV <i data-feather="download" class="ml-2"></i>
+                                </a>
+                                <div class="flex space-x-2">
+                                    <a href="https://github.com/roshanthm" target="_blank" class="p-2 bg-gray-800 rounded-full hover:bg-gray-700 transition">
+                                        <i data-feather="github" class="w-4 h-4"></i>
+                                    </a>
+                                    <a href="https://linkedin.com/in/roshan-thomas-" target="_blank" class="p-2 bg-blue-600 rounded-full hover:bg-blue-700 transition">
+                                        <i data-feather="linkedin" class="w-4 h-4"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center" data-aos="fade-up">My <span class="text-gradient">Projects</span></h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project 1 -->
+                    <div class="glass-card rounded-2xl overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                        <img src="http://static.photos/technology/640x360/101" alt="Project 1" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Smart Campus App</h3>
+                            <p class="text-gray-300 mb-4">A mobile application for college students to access campus resources, events, and notifications.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-2 py-1 bg-blue-500/20 rounded-full text-xs">Flutter</span>
+                                <span class="px-2 py-1 bg-purple-500/20 rounded-full text-xs">Firebase</span>
+                            </div>
+                            <a href="https://github.com/roshanthm?tab=repositories" target="_blank" class="text-blue-400 hover:text-blue-300 flex items-center">
+                                View Project <i data-feather="arrow-right" class="ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2 -->
+                    <div class="glass-card rounded-2xl overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                        <img src="http://static.photos/technology/640x360/102" alt="Project 2" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">AI-Powered Chatbot</h3>
+                            <p class="text-gray-300 mb-4">An intelligent chatbot for educational institutions to handle student queries efficiently.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-2 py-1 bg-green-500/20 rounded-full text-xs">Python</span>
+                                <span class="px-2 py-1 bg-yellow-500/20 rounded-full text-xs">NLP</span>
+                                <span class="px-2 py-1 bg-red-500/20 rounded-full text-xs">TensorFlow</span>
+                            </div>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 flex items-center">
+                                View Project <i data-feather="arrow-right" class="ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 3 -->
+                    <div class="glass-card rounded-2xl overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+                        <img src="http://static.photos/technology/640x360/103" alt="Project 3" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">E-Commerce Dashboard</h3>
+                            <p class="text-gray-300 mb-4">A comprehensive analytics dashboard for e-commerce businesses with real-time data.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-2 py-1 bg-blue-500/20 rounded-full text-xs">React</span>
+                                <span class="px-2 py-1 bg-purple-500/20 rounded-full text-xs">Node.js</span>
+                                <span class="px-2 py-1 bg-green-500/20 rounded-full text-xs">MongoDB</span>
+                            </div>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 flex items-center">
+                                View Project <i data-feather="arrow-right" class="ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-12" data-aos="fade-up">
+                    <a href="https://github.com/roshanthm?tab=repositories" target="_blank" class="px-6 py-3 border border-white rounded-full font-medium hover:bg-white hover:text-gray-900 transition inline-flex items-center">
+                        View All Projects <i data-feather="chevron-right" class="ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center" data-aos="fade-up">Get In <span class="text-gradient">Touch</span></h2>
+                <div class="flex flex-col md:flex-row gap-12">
+                    <div class="w-full md:w-1/2" data-aos="fade-right">
+                        <div class="glass-card p-8 rounded-2xl">
+                            <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                            <div class="space-y-6">
+                                <div class="flex items-start">
+                                    <div class="bg-blue-500/20 p-3 rounded-full mr-4">
+                                        <i data-feather="mail"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium">Email</h4>
+                                        <p class="text-gray-300">roshansepkappadu@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="bg-purple-500/20 p-3 rounded-full mr-4">
+                                        <i data-feather="phone"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium">Phone</h4>
+                                        <p class="text-gray-300">+91 98765 43210</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="bg-green-500/20 p-3 rounded-full mr-4">
+                                        <i data-feather="map-pin"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium">Location</h4>
+                                        <p class="text-gray-300">Amal Jyothi College of Engineering, Kanjirappally</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-8">
+                                <h4 class="font-medium mb-4">Connect with me</h4>
+                                <div class="flex space-x-4">
+                                    <a href="https://linkedin.com/in/roshan-thomas-" target="_blank" class="p-3 bg-blue-500/20 rounded-full hover:bg-blue-500/30 transition">
+                                        <i data-feather="linkedin"></i>
+                                    </a>
+                                    <a href="https://github.com/roshanthm" target="_blank" class="p-3 bg-purple-500/20 rounded-full hover:bg-purple-500/30 transition">
+                                        <i data-feather="github"></i>
+                                    </a>
+                                    <a href="https://instagram.com/" target="_blank" class="p-3 bg-pink-500/20 rounded-full hover:bg-pink-500/30 transition">
+                                        <i data-feather="instagram"></i>
+                                    </a>
+                                    <a href="https://twitter.com/" target="_blank" class="p-3 bg-blue-400/20 rounded-full hover:bg-blue-400/30 transition">
+                                        <i data-feather="twitter"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="w-full md:w-1/2" data-aos="fade-left">
+                        <div class="glass-card p-8 rounded-2xl">
+                            <h3 class="text-2xl font-bold mb-6">Send Me a Message</h3>
+                            <form action="https://formsubmit.co/roshansepkappadu@gmail.com" method="POST" class="space-y-6">
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_next" value="https://yourdomain.com/thanks.html">
+                                <input type="hidden" name="_subject" value="New message from your portfolio">
+                                <input type="hidden" name="_template" value="table">
+                                <div>
+                                    <label for="name" class="block mb-2">Your Name</label>
+                                    <input type="text" id="name" name="name" required class="w-full bg-gray-800/50 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                </div>
+                                <div>
+                                    <label for="email" class="block mb-2">Your Email</label>
+                                    <input type="email" id="email" name="email" required class="w-full bg-gray-800/50 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                </div>
+                                <div>
+                                    <label for="subject" class="block mb-2">Subject</label>
+                                    <input type="text" id="subject" name="_subject" class="w-full bg-gray-800/50 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                </div>
+                                <div>
+                                    <label for="message" class="block mb-2">Message</label>
+                                    <textarea id="message" name="message" rows="4" required class="w-full bg-gray-800/50 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                                </div>
+                                <button type="submit" class="w-full px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full font-medium hover:shadow-lg transition">
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-8 text-center">
+        <div class="max-w-6xl mx-auto px-6 md:px-12">
+            <div class="glass-card p-6 rounded-2xl">
+                <p class="mb-4">© 2023 Roshan Thomas. All rights reserved.</p>
+                <p class="text-gray-400">Made with ❤️ and modern web technologies</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Vanta.js background
+        VANTA.GLOBE({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x3b82f6,
+            backgroundColor: 0x0a0a1a,
+            size: 0.8
+        });
+
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+
+        // Feather icons
+        feather.replace();
+    </script>
+</body>
+</html>
